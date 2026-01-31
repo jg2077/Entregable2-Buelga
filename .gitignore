@@ -1,0 +1,34 @@
+# Archivos del sistema operativo (macOS y Windows)
+.DS_Store         # Archivo oculto que usa macOS para guardar metadatos de carpetas
+Thumbs.db         # Archivo de vista previa de imágenes en Windows
+
+# Dependencias de proyectos con Node.js
+node_modules/     # Carpeta donde se instalan los paquetes de npm o yarn
+package-lock.json # Archivo de bloqueo de versiones de npm
+yarn.lock         # Archivo de bloqueo de versiones de yarn
+
+# Archivos generados por herramientas de construcción
+dist/             # Carpeta de distribución final, usada para producción
+build/            # Carpeta de construcción temporal, usada por algunos frameworks
+
+# Archivos temporales y de depuración
+*.log             # Archivos de registro (logs)
+*.tmp             # Archivos temporales
+*.swp             # Archivos de intercambio creados por editores como Vim
+
+# Archivos de configuración privada
+.env              # Variables de entorno, pueden contener claves secretas
+.env.local        # Configuración local específica
+.env.production   # Configuración para entorno de producción
+
+# Archivos de Netlify (si se usan funciones o configuración avanzada)
+.netlify/         # Carpeta interna de Netlify para funciones y configuración
+
+# Archivos de configuración del editor
+.vscode/          # Configuración de Visual Studio Code
+.idea/            # Configuración de JetBrains (WebStorm, PhpStorm, etc.)
+*.sublime-project # Proyecto de Sublime Text
+*.sublime-workspace # Espacio de trabajo de Sublime Text
+
+# Archivos de verificación externa (como Google Search Console)
+google*.html      # Archivos de verificación HTML de Google (por ejemplo: google123456.html)

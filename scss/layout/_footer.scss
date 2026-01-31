@@ -1,0 +1,50 @@
+.pie {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  min-height: 37px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  .footer-left {
+    justify-self: start;
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    p {
+      margin: 0 !important;
+    }
+  }
+
+  .footer-text {
+    justify-self: center;
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    p {
+      margin: 0 !important;
+    }
+  }
+
+  .redes-sociales-container {
+    justify-self: end;
+    display: flex;
+    gap: 10px;
+
+    a {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      transition: 0.5s;
+
+      &:hover {
+        color: rgb(228, 181, 119);
+      }
+    }
+  }
+}

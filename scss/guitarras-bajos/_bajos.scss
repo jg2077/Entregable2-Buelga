@@ -1,0 +1,86 @@
+.bajos-destacados {
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 181, 119);
+    margin: 10px;
+    padding: 10px;
+    border: black solid;
+  }
+
+  h3 {
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+
+  .contenedor-bajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+      border: solid;
+      width: 300px;
+      height: 325px;
+      margin: 50px;
+      text-align: center;
+      background-color: white;
+      // background-image: url("../imagenes/card-fondo.jpg");
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
+      transition: 1s;
+      position: relative;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        margin-top: 5px;
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.648);
+        color: white;
+        border: none;
+        padding: 7px 12px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+
+        &:hover {
+          background-color: red;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 5px;
+        transition: 1s;
+
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+}

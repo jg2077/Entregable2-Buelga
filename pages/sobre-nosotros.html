@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logos/ventana.png"> <!-- logo en ventana -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--botones-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css"> <!--style despues de bootstrap para pisar cambios / link sass-->
+    <!--Key words-->
+    <meta name="keywords" content="musica, instrumentos, guitarras, bajos,acusticas, accesorios, luthier, usados">
+    <!--Description-->
+    <meta name="description" content="Amp Music: Tigre, Pacheco, San Fernando, Zona norte, importadora">
+    <!-- Protocolo Open Graph -->
+    <!-- Protocolo Open Graph -->
+    <meta property="og:title" content="AMP Music - Tu importadora de instrumentos musicales">
+    <meta property="og:description"
+        content="Descubrí guitarras, bajos, accesorios y servicios de luthier. Ofertas y novedades online en AMP Music.">
+    <meta property="og:image" content="https://amp-music.vercel.app/imagenes/logos/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://amp-music.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="AMP Music">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="../imagenes/logos/logo.png" alt="Logo" title="logo" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- mx-auto centers the list -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./guitarras.html">Guitarras & Bajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./custom.html">Custom Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./sobre-nosotros.html">Sobre
+                                nosotros</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <img src="../imagenes/logos/carrito.png" alt="carrito" class="carrito">
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="seccion-nosotros">
+            <div class="container my-4">
+                <div class="row align-items-center">
+                    <!-- Columna de texto (8 columnas) -->
+                    <div class="col-md-8">
+                        <h1 class="titulo-historia">Nuestra historia</h1>
+                        <p>
+                            Desde hace más de diez años importamos instrumentos Fender originales, consolidándonos como
+                            referentes en el mercado argentino.
+
+                            Contamos con locales en zona norte, donde ofrecemos variedad, asesoramiento especializado y
+                            calidad garantizada. Gracias a nuestra trayectoria, hoy somos líderes en ventas en la
+                            región.
+                        </p>
+                    </div>
+
+                    <!-- Columna de imagen (4 columnas) -->
+                    <div class="col-md-4 text-center">
+                        <img src="../imagenes/logos/fender-logo.jpg" alt="Fender-logo" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+
+            <h2 class="titutlo-contacto">Dejanos tu mail con tu pedido</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Tu direccion de mail</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Contanos sobre tu pedido</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="titulo-sobre-nosotros">¿Donde encontrarnos?</h2>
+
+            <div class="grilla-ubi">
+                <div class="item">
+                    <h3>San Fernando</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52636.75604811744!2d-58.678463544404984!3d-34.457294191523594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1b54c12aee51e4b%3A0xca0dffe37324e1ad!2sEl%20Atril%20~CASA%20DE%20M%C3%9ASICOS!5e0!3m2!1ses-419!2sar!4v1757534023348!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="item">
+                    <h3>Tigre</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13162.84868001347!2d-58.5839512128418!3d-34.43406559999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca48ff011fea7%3A0x76972d292b690101!2sEl%20Acorde!5e0!3m2!1ses-419!2sar!4v1757533711357!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="item">
+                    <h3>Pacheco</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13159.17391291064!2d-58.64756361284182!3d-34.45738999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca48ddd213759%3A0xabfd2aa998235e1d!2sBM%20Music!5e0!3m2!1ses-419!2sar!4v1757533745382!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+
+        <div class="footer-left"> <!-- columna izquierda -->
+            <p>© 2025</p>
+        </div>
+
+        <div class="footer-text">
+            <p>Amp music</p>
+        </div>
+
+        <div class="redes-sociales-container">
+            <a href="Facebook-AMP-music"><i class="bi bi-facebook"></i></a>
+            <a href="Whatsapp-AMP-music"><i class="bi bi-whatsapp"></i></i></a>
+            <a href="Instagram-AMP-music"><i class="bi bi-instagram"></i></a>
+            <a href="Twitter-AMP-music"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

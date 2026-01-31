@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logos/ventana.png"> <!-- logo en ventana -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--botones-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css"> <!--style despues de bootstrap para pisar cambios-->
+    <meta name="keywords" content="musica, instrumentos, guitarras, bajos,acusticas, accesorios, luthier, usados">
+    <meta name="description" content="Amp Music: correas, puas, cables, case, cuerdas, ropa, estuche, tuner, stand">
+    <meta property="og:title" content="AMP Music - Tu importadora de instrumentos musicales">
+    <meta property="og:description"
+        content="Descubrí guitarras, bajos, accesorios y servicios de luthier. Ofertas y novedades online en AMP Music.">
+    <meta property="og:image" content="https://amp-music.vercel.app/imagenes/logos/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://amp-music.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="AMP Music">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="../imagenes/logos/logo.png" alt="Logo" title="logo" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./guitarras.html">Guitarras & Bajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./custom.html">Custom Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <!-- contador y id al logo -->
+                        <span id="carrito-count">0</span>
+                        <img src="../imagenes/logos/carrito.png" alt="carrito" id="carrito-logo" class="carrito">
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="titulo-accesorios"> Nuestros accesorios</h1>
+
+        <section class="grid-accesorios">
+            <div class="grid-item">
+                <img src="../imagenes/accesorios/correa.png" alt="Correas">
+                <h3>Correas</h3>
+                <button class="boton" data-id="301">Comprar $100</button>
+            </div>
+
+            <div class="grid-item">
+                <img src="../imagenes/accesorios/puas.png" alt="Puas">
+                <h3>Puas</h3>
+                <button class="boton" data-id="302">Comprar $5</button>
+            </div>
+
+            <div class="grid-item">
+                <img src="../imagenes/accesorios/cable.png" alt="Cables">
+                <h3>Cables</h3>
+                <button class="boton" data-id="303">Comprar $20</button>
+            </div>
+
+            <div class="grid-item img4">
+                <img src="../imagenes/accesorios/case.png" alt="Cases">
+                <h3>Cases</h3>
+                <button class="boton" data-id="304">Comprar $1000</button>
+            </div>
+
+            <div class="grid-item">
+                <img src="../imagenes/accesorios/cuerdas.png" alt="Cuerdas">
+                <h3>Cuerdas</h3>
+                <button class="boton" data-id="305">Comprar $150</button>
+            </div>
+
+            <div class="grid-item img6">
+                <img src="../imagenes/accesorios/ropa.png" alt="Merch">
+                <h3>Buzo</h3>
+                <button class="boton" data-id="306">Comprar $60</button>
+            </div>
+
+            <div class="grid-item">
+                <img src="../imagenes/accesorios/estuche.png" alt="Fundas">
+                <h3>Fundas</h3>
+                <button class="boton" data-id="307">Comprar $500</button>
+            </div>
+
+            <div class="grid-item img8">
+                <img src="../imagenes/accesorios/tuner.png" alt="Tuners">
+                <h3>Tuners</h3>
+                <button class="boton" data-id="308">Comprar $200</button>
+            </div>
+
+            <div class="grid-item img9">
+                <img src="../imagenes/accesorios/stand.png" alt="Stands">
+                <h3>Stands</h3>
+                <button class="boton" data-id="309">Comprar $80</button>
+            </div>
+        </section>
+
+        <!-- Bloque del carrito -->
+        <section id="carrito-container" style="display:none;">
+          <h2>Carrito</h2>
+          <ul id="carrito-lista"></ul>
+          <p id="carrito-total">Total: $0</p>
+          <button id="vaciar-carrito">Vaciar carrito</button>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <div class="footer-left">
+            <p>© 2025</p>
+        </div>
+        <div class="footer-text">
+            <p>Amp music</p>
+        </div>
+        <div class="redes-sociales-container">
+            <a href="Facebook-AMP-music"><i class="bi bi-facebook"></i></a>
+            <a href="Whatsapp-AMP-music"><i class="bi bi-whatsapp"></i></a>
+            <a href="Instagram-AMP-music"><i class="bi bi-instagram"></i></a>
+            <a href="Twitter-AMP-music"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
+    <!-- Js script -->
+    <script src="../main.js"></script>
+</body>
+</html>

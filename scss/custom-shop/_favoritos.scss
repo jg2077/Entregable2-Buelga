@@ -1,0 +1,7 @@
+.favs-container img{
+   width: 100%;      /* La imagen ocupa todo el ancho de la columna */
+  margin-bottom: 10px; /* Separación entre imágenes */
+  margin-top: 10px;
+  border-radius: 8px;  /* Bordes redondeados opcional */
+  object-fit: cover;   /* Ajusta la imagen dentro del contenedor */
+}

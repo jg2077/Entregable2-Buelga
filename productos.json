@@ -1,0 +1,40 @@
+{
+  "ofertas-destacados": [
+    { "id": 1, "nombre": "Fender Mustang", "precio": 2200 },
+    { "id": 2, "nombre": "Fender Telecaster", "precio": 2500 },
+    { "id": 3, "nombre": "Fender AC-30", "precio": 2100 },
+    { "id": 4, "nombre": "Fender Jaguar", "precio": 2700 },
+    { "id": 5, "nombre": "Fender Starcaster", "precio": 2500}
+  ],
+  "guitarras": [
+    { "id": 101, "nombre": "Fender Jazzmaster", "precio": 2800 },
+    { "id": 102, "nombre": "Fender Meteora", "precio": 2700 },
+    { "id": 103, "nombre": "Fender Stratocaster", "precio": 2500 },
+    { "id": 104, "nombre": "Fender Telecaster", "precio": 2400 },
+    { "id": 105, "nombre": "Fender Tele Custom", "precio": 3000 },
+    { "id": 106, "nombre": "Fender Duo-Sonic", "precio": 2200 },
+    { "id": 107, "nombre": "Fender Strato Left", "precio": 2300 },
+    { "id": 108, "nombre": "Fender Tele Thinline", "precio": 2600 }
+  ],
+  "bajos": [
+    { "id": 201, "nombre": "Fender Jazz", "precio": 2500 },
+    { "id": 202, "nombre": "Fender Precision", "precio": 2400 },
+    { "id": 203, "nombre": "Fender Mustang", "precio": 2100 },
+    { "id": 204, "nombre": "Fender Jaguar", "precio": 2600 },
+    { "id": 205, "nombre": "Fender Meteora Bass", "precio": 2300 },
+    { "id": 206, "nombre": "Fender Jazz 5", "precio": 2800 },
+    { "id": 207, "nombre": "Fender Telecaster Bass", "precio": 2700 },
+    { "id": 208, "nombre": "Fender VI", "precio": 2900 }
+  ],
+  "accesorios": [
+    { "id": 301, "nombre": "Correas", "precio": 100 },
+    { "id": 302, "nombre": "Puas", "precio": 5 },
+    { "id": 303, "nombre": "Cables", "precio": 20 },
+    { "id": 304, "nombre": "Cases", "precio": 1000 },
+    { "id": 305, "nombre": "Cuerdas", "precio": 150 },
+    { "id": 306, "nombre": "Buzo", "precio": 60 },
+    { "id": 307, "nombre": "Fundas", "precio": 500 },
+    { "id": 308, "nombre": "Tuners", "precio": 200 },
+    { "id": 309, "nombre": "Stands", "precio": 80 }
+  ]
+}

@@ -1,0 +1,116 @@
+/**********************media query 1000px grilla usados luthier *********************/
+
+@media (max-width: 1000px) {
+  .usados-luthier-container {
+    grid-template-columns: 1fr;
+    /* 1 columna */
+    grid-auto-rows: auto;
+  }
+
+  .usados,
+  .luthier {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .usados-item,
+  .luthier-item {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/********************** media query 1000px grilla sobre nosotros *********************/
+
+@media (max-width: 1000px) {
+  .grilla-ubi {
+    grid-template-columns: 1fr;
+    /* 1 columna (items apilados) */
+  }
+}
+
+/**********************media query 940px grilla accesorios *********************/
+@media (max-width:940px) {
+  .grid-accesorios {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+  }
+
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .img9 {
+    grid-column: span 2;
+  }
+
+}
+
+/*****************custom-shop how 768****************************/
+@media (max-width: 768px) {
+  .favs-container .row {
+    display: flex;
+    flex-direction: column;
+    /* Apilar columnas verticalmente */
+    align-items: center;
+    /* Centrar contenido horizontalmente */
+  }
+
+  .favs-container .col-1 {
+    display: none;
+    /* Ocultar las columnas vacías */
+  }
+
+  .columna-imagenes {
+    width: 100%;
+    /* Cada columna ocupa todo el ancho */
+    margin-bottom: 20px;
+  }
+}
+
+/**********************h1 fuente mobile*********************/
+@media (max-width: 600px) {
+  .titulo-principal {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .guitarras-destacados .titulo-gb {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-custom {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-custom {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-accesorios {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .seccion-nosotros .titulo-historia {
+    font-size: 28px;
+  }
+}

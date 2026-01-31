@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagenes/logos/ventana.png"> <!-- logo en ventana -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--botones-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css"> <!--style despues de bootstrap para pisar cambios / link sass-->
+    <!--Key words-->
+    <meta name="keywords" content="musica, instrumentos, guitarras, bajos,acusticas, accesorios, luthier, usados">
+    <!--Description-->
+    <meta name="description"
+        content="Amp Music: stratocaster, telecaster, mustang, jaguar, jazz bass, p bass, thinline">
+    <!-- Protocolo Open Graph -->
+    <meta property="og:title" content="AMP Music - Tu importadora de instrumentos musicales">
+    <meta property="og:description"
+        content="Descubrí guitarras, bajos, accesorios y servicios de luthier. Ofertas y novedades online en AMP Music.">
+    <meta property="og:image" content="https://amp-music.vercel.app/imagenes/logos/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://amp-music.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="AMP Music">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="../imagenes/logos/logo.png" alt="Logo" title="logo" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- mx-auto centers the list -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./guitarras.html">Guitarras & Bajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./custom.html">Custom Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <!-- contador y id al logo -->
+                        <span id="carrito-count">0</span>
+                        <img src="../imagenes/logos/carrito.png" alt="carrito" id="carrito-logo" class="carrito">
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="guitarras-destacados">
+            <h1 class="titulo-gb">Conoce nuestras guitarras y bajos</h1>
+            <h2>Guitarras Destacadas</h2>
+
+            <div class="contenedor-guitarras">
+                <div>
+                    <img src="../imagenes/guitarras/gjazz.png" alt="jazz">
+                    <h3>Fender Jazzmaster</h3>
+                    <button class="boton" data-id="101">Comprar $2800</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gmeteora.png" alt="meteora">
+                    <h3>Fender Meteora</h3>
+                    <button class="boton" data-id="102">Comprar $2700</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gstrato.png" alt="strato">
+                    <h3>Fender Stratocaster</h3>
+                    <button class="boton" data-id="103">Comprar $2500</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gtele.png" alt="tele">
+                    <h3>Fender Telecaster</h3>
+                    <button class="boton" data-id="104">Comprar $2400</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gcustom.png" alt="custom" loading="lazy">
+                    <h3>Fender Tele Custom</h3>
+                    <button class="boton" data-id="105">Comprar $3000</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gduosonic.png" alt="duosonic" loading="lazy">
+                    <h3>Fender Duo-Sonic</h3>
+                    <button class="boton" data-id="106">Comprar $2200</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gstratol.png" alt="stratoleft" loading="lazy">
+                    <h3>Fender Strato Left</h3>
+                    <button class="boton" data-id="107">Comprar $2300</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/guitarras/gthinline.png" alt="thinline" loading="lazy">
+                    <h3>Fender Tele Thinline</h3>
+                    <button class="boton" data-id="108">Comprar $2600</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="bajos-destacados">
+            <h2>Bajos Destacados</h2>
+
+            <div class="contenedor-bajos">
+                <div>
+                    <img src="../imagenes/bajos/bjazz.png" alt="jazz" loading="lazy">
+                    <h3>Fender Jazz</h3>
+                    <button class="boton" data-id="201">Comprar $2500</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/bpbass.png" alt="precision" loading="lazy">
+                    <h3>Fender Precision</h3>
+                    <button class="boton" data-id="202">Comprar $2400</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/bmustang.png" alt="mustang" loading="lazy">
+                    <h3>Fender Mustang</h3>
+                    <button class="boton" data-id="203">Comprar $2100</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/bjaguar.png" alt="jaguar" loading="lazy">
+                    <h3>Fender Jaguar</h3>
+                    <button class="boton" data-id="204">Comprar $2600</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/bmeteora.png" alt="meteora" loading="lazy">
+                    <h3>Fender Meteora Bass</h3>
+                    <button class="boton" data-id="205">Comprar $2300</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/bjazz5.png" alt="jazz5" loading="lazy">
+                    <h3>Fender Jazz 5</h3>
+                    <button class="boton" data-id="206">Comprar $2800</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/btele.png" alt="tele" loading="lazy">
+                    <h3>Fender Telecaster Bass</h3>
+                    <button class="boton" data-id="207">Comprar $2700</button>
+                </div>
+
+                <div>
+                    <img src="../imagenes/bajos/bvii.png" alt="vii" loading="lazy">
+                    <h3>Fender VI</h3>
+                    <button class="boton" data-id="208">Comprar $2900</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloque del carrito -->
+        <section id="carrito-container" style="display:none;">
+            <h2>Carrito</h2>
+            <ul id="carrito-lista"></ul>
+            <p id="carrito-total">Total: $0</p>
+            <button id="vaciar-carrito">Vaciar carrito</button>
+        </section>
+
+
+    </main>
+
+    <footer class="pie">
+
+        <div class="footer-left"> <!-- columna izquierda -->
+            <p>© 2025</p>
+        </div>
+
+        <div class="footer-text">
+            <p>Amp music</p>
+        </div>
+
+        <div class="redes-sociales-container">
+            <a href="Facebook-AMP-music"><i class="bi bi-facebook"></i></a>
+            <a href="Whatsapp-AMP-music"><i class="bi bi-whatsapp"></i></i></a>
+            <a href="Instagram-AMP-music"><i class="bi bi-instagram"></i></a>
+            <a href="Twitter-AMP-music"><i class="bi bi-twitter-x"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- Js script -->
+    <script src="../main.js"></script>
+</body>
+
+</html>

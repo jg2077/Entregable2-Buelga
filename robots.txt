@@ -1,0 +1,12 @@
+# Aplica estas reglas a todos los bots
+User-agent: *
+
+# No permitir el rastreo de carpetas internas que no son relevantes para SEO
+Disallow: /admin/
+Disallow: /privado/
+
+# Permitir el rastreo del resto del sitio
+Allow: /
+
+# Indicar la ubicación del sitemap para facilitar la indexación
+Sitemap: https://ampmusic.netlify.app/sitemap.xml

@@ -1,0 +1,19 @@
+{
+  "name": "amp_music_0.97",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Jose</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jg2077/AMP_music_0.97.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jg2077/AMP_music_0.97/issues"
+  },
+  "homepage": "https://github.com/jg2077/AMP_music_0.97#readme"
+}

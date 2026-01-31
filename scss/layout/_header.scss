@@ -1,0 +1,31 @@
+header {
+    .bg-body-tertiary {
+        background-color: rgb(228, 181, 119) !important;
+        color: black !important;
+        font-weight: 600;
+
+        .nav-link {
+            &:hover {
+                color: white !important;
+                transition: 0.5s;
+            }
+
+            &.active {
+                color: red !important;
+            }
+        }
+    }
+
+    div {
+        .logo {
+            width: 70px;
+            height: auto;
+        }
+
+        .carrito {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+}

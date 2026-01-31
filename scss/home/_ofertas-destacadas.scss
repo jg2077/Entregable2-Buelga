@@ -1,0 +1,86 @@
+// .contenedor-ofertas {
+//   display: flex;
+//   /*para que los elementos se muestren en una sola linea*/
+//   justify-content: space-around;
+//   align-items: center;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   /*para que los elementos se ajusten al ancho de la pantalla*/
+// }
+
+.ofertas-destacados {
+  .contenedor-ofertas {
+    > div {
+      border: solid;
+      width: 300px;
+      height: 325px;
+      margin: 15px;
+      text-align: center;
+      background-color: white;
+      transition: 1s;
+      position: relative;
+    }
+
+    > div:hover {
+      transform: scale(1.1);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    div img {
+      width: 250px;
+      height: 250px;
+      margin-top: 5px;
+      object-fit: contain;
+    }
+
+    div button {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.648);
+      color: white;
+      border: none;
+      padding: 7px 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+
+      &:hover {
+        background-color: red;
+      }
+    }
+
+    div a:hover {
+      background-color: rgb(255, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .titulo-principal {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    border: black solid;
+  }
+
+  h3 {
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+}
+
+// .ofertas-destacados div a {
+//   text-decoration: none;
+//   /*quita el subrayado*/
+//   color: rgb(255, 255, 255);
+//   background-color: black;
+//   padding: 5px;
+// }

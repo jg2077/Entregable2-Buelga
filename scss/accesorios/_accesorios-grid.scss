@@ -1,0 +1,88 @@
+.titulo-accesorios {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  border: black solid;
+}
+
+.grid-accesorios {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+  cursor: pointer;
+
+  .grid-item {
+    border: solid;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.421);
+    transition: 1s;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    h3 {
+      position: absolute !important;
+      bottom: 38px !important;
+      left: 0 !important;
+      color: white !important;
+      background-color: rgba(0, 0, 0, 0.648) !important;
+      padding: 7px 12px !important;
+      margin: 0 !important;
+      font-size: 14px !important;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+
+      &:hover {
+        background-color: red !important;
+      }
+    }
+
+    button {
+      position: absolute !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      background-color: rgba(0, 0, 0, 0.648) !important;
+      color: white !important;
+      border: none !important;
+      padding: 7px 12px !important;
+      cursor: pointer !important;
+      transition: 0.3s !important;
+      font-size: 14px !important;
+      font-family: 'Roboto', sans-serif !important;
+
+      &:hover {
+        background-color: red !important;
+      }
+    }
+  }
+
+  .img4 {
+    grid-column: span 2;
+  }
+
+  .img6 {
+    grid-row: span 2;
+  }
+
+  .img8 {
+    grid-row: span 2;
+  }
+}
