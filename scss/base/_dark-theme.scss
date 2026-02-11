@@ -5,7 +5,7 @@
   --dm-surface: #121416;
   --dm-text: #e6e6e6;
   --dm-muted: #9a9a9a;
-  --dm-accent: #bb86fc;
+  --dm-accent: #ffffff;
 }
 
 /* Apply theme colors at root level */
@@ -20,6 +20,13 @@
 [data-theme="dark"] body {
   background-color: var(--dm-bg);
   color: var(--dm-text);
+}
+
+/* Nav bar dark theme: igual fondo al footer */
+.dark-theme .bg-body-tertiary,
+[data-theme="dark"] .bg-body-tertiary {
+  background-color: #333 !important;
+  color: #fff !important;
 }
 
 .dark-theme a,
