@@ -1,4 +1,4 @@
-
+hacer andar los partials nuevos de modo oscuro, daltonismo y contraste
 
 cambio de idioma definir como
 
