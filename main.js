@@ -3,12 +3,14 @@ const langToggle = document.getElementById('lang-toggle');
 const langFlag = document.getElementById('lang-flag');
 if (langToggle && langFlag) {
   let currentLang = localStorage.getItem('lang') || 'es';
+  // Detectar ruta correcta de las banderas según la ubicación del HTML
+  const flagPath = window.location.pathname.includes('/pages/') ? '../imagenes/logos/' : './imagenes/logos/';
   function updateFlag() {
     if (currentLang === 'es') {
-      langFlag.src = './imagenes/logos/es.png';
+      langFlag.src = flagPath + 'es.png';
       langFlag.alt = 'Español';
     } else {
-      langFlag.src = './imagenes/logos/gb.png';
+      langFlag.src = flagPath + 'gb.png';
       langFlag.alt = 'English';
     }
   }
