@@ -1,4 +1,4 @@
-hacer andar los partials nuevos de modo oscuro, daltonismo y contraste
+
 
 cambio de idioma definir como
 
@@ -12,3 +12,4 @@ carrito total y unidades no tab
 
 carrusel transparente en modo oscuro pasa de rosa a violeta
 
+total y cantidad no aparece en custom y sobre nosotros
