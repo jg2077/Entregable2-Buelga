@@ -36,6 +36,33 @@
   color: var(--dm-text);
 }
 
+/* Carrito con líneas blancas en modo oscuro */
+.dark-theme header div .carrito,
+[data-theme="dark"] header div .carrito {
+  filter: brightness(0) invert(1);
+  padding: 2px;
+}
+
+/* Total y cantidad de items en blanco en modo oscuro */
+.dark-theme #carrito-total,
+[data-theme="dark"] #carrito-total,
+.dark-theme #carrito-count,
+[data-theme="dark"] #carrito-count {
+  color: #fff !important;
+}
+
+.dark-theme nav #carrito-total,
+[data-theme="dark"] nav #carrito-total,
+.dark-theme nav #carrito-count,
+[data-theme="dark"] nav #carrito-count {
+  color: #fff !important;
+}
+
+.dark-theme .navbar-text #carrito-count,
+[data-theme="dark"] .navbar-text #carrito-count {
+  color: #fff !important;
+}
+
 /* Ensure body becomes black when dark theme is active */
 .dark-theme body,
 [data-theme="dark"] body {
