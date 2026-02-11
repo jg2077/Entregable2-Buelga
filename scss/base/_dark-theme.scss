@@ -94,6 +94,13 @@
   border: 2px solid #fff !important;
 }
 
+/* Accesorios grid: igual fondo al footer en modo oscuro */
+.dark-theme .grid-accesorios > .grid-item,
+[data-theme="dark"] .grid-accesorios > .grid-item {
+  background-color: #333 !important;
+  border: 2px solid #fff !important;
+}
+
 .dark-theme .ofertas-destacados h3,
 [data-theme="dark"] .ofertas-destacados h3 {
   color: #fff !important;
