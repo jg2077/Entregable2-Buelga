@@ -66,31 +66,6 @@ header div .carrito {
   cursor: pointer;
 }
 
-/* Carrito líneas blancas en modo oscuro */
-.dark-theme .carrito,
-[data-theme="dark"] .carrito {
-  filter: brightness(0) invert(1);
-  padding: 2px;
-}
-
-/* Total y cantidad de items en blanco en modo oscuro */
-.dark-theme #carrito-total,
-[data-theme="dark"] #carrito-total,
-.dark-theme #carrito-count,
-[data-theme="dark"] #carrito-count {
-  color: #fff !important;
-}
-.dark-theme nav #carrito-total,
-[data-theme="dark"] nav #carrito-total,
-.dark-theme nav #carrito-count,
-[data-theme="dark"] nav #carrito-count {
-  color: #fff !important;
-}
-.dark-theme .navbar-text #carrito-count,
-[data-theme="dark"] .navbar-text #carrito-count {
-  color: #fff !important;
-}
-
 .ofertas-destacados .contenedor-ofertas > div {
   border: solid;
   width: 300px;
@@ -159,26 +134,14 @@ section .titulo-rosa {
   padding: 10px;
   border: black solid;
 }
-section {
-  /* Si prefieres renombrar: .carousel--pink en lugar de .pink-background */
-}
 section .pink-background {
   background-color: rgba(255, 0, 208, 0.537);
-}
-section {
-  /* Bootstrap carousel - mantengo la estructura base y anido modificaciones */
-}
-section .carousel-inner {
-  /* Para títulos y párrafos dentro del carousel */
 }
 section .carousel-inner h5 {
   color: rgb(255, 255, 255) !important;
 }
 section .carousel-inner p {
   color: rgb(255, 255, 255) !important;
-}
-section .carousel {
-  /* caption como componente anidado */
 }
 section .carousel .carousel-caption {
   position: absolute;
@@ -775,6 +738,33 @@ a {
 [data-theme=dark] {
   background-color: var(--dm-bg);
   color: var(--dm-text);
+}
+
+/* Carrito con líneas blancas en modo oscuro */
+.dark-theme header div .carrito,
+[data-theme=dark] header div .carrito {
+  filter: brightness(0) invert(1);
+  padding: 2px;
+}
+
+/* Total y cantidad de items en blanco en modo oscuro */
+.dark-theme #carrito-total,
+[data-theme=dark] #carrito-total,
+.dark-theme #carrito-count,
+[data-theme=dark] #carrito-count {
+  color: #fff !important;
+}
+
+.dark-theme nav #carrito-total,
+[data-theme=dark] nav #carrito-total,
+.dark-theme nav #carrito-count,
+[data-theme=dark] nav #carrito-count {
+  color: #fff !important;
+}
+
+.dark-theme .navbar-text #carrito-count,
+[data-theme=dark] .navbar-text #carrito-count {
+  color: #fff !important;
 }
 
 /* Ensure body becomes black when dark theme is active */
