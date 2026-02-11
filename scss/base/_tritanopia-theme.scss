@@ -1,0 +1,25 @@
+/*** Tritanopia-friendly theme **/
+
+:root {
+  --t-bg: #fcfcfd;
+  --t-surface: #ffffff;
+  --t-text: #0b1220;
+  --t-muted: #6b6f78;
+  --t-accent: #d07a00; /* orange accent avoids blue confusion */
+}
+
+.tritanopia-theme,
+[data-theme="tritanopia"] {
+  background-color: var(--t-bg);
+  color: var(--t-text);
+}
+
+.tritanopia-theme a,
+[data-theme="tritanopia"] a {
+  color: var(--t-accent);
+}
+
+.tritanopia-theme .muted,
+[data-theme="tritanopia"] .muted {
+  color: var(--t-muted);
+}
