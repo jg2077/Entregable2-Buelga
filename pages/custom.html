@@ -60,8 +60,14 @@
                             <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
                         </li>
                     </ul>
-                    <span class="navbar-text">
-                        <!-- Botón modo -->
+                    <span class="navbar-text d-flex align-items-center">
+                        <!-- Selector de idioma -->
+                        <div id="language-selector" class="me-2">
+                            <button class="btn btn-link p-0" id="lang-toggle" aria-label="Cambiar idioma">
+                                <img id="lang-flag" src="../imagenes/logos/es.png" alt="Español" width="28" height="28" style="border-radius: 50%; box-shadow: 0 0 2px #000;">
+                            </button>
+                        </div>
+                        <!-- Botón modo oscuro -->
                         <button id="theme-toggle" class="btn btn-link p-0 me-2" aria-label="Toggle theme">
                             <i id="theme-icon" class="bi bi-sun"></i>
                         </button>
