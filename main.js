@@ -1,3 +1,25 @@
+// Selector de idioma: alternar bandera
+const langToggle = document.getElementById('lang-toggle');
+const langFlag = document.getElementById('lang-flag');
+if (langToggle && langFlag) {
+  let currentLang = localStorage.getItem('lang') || 'es';
+  function updateFlag() {
+    if (currentLang === 'es') {
+      langFlag.src = './imagenes/logos/es.png';
+      langFlag.alt = 'Español';
+    } else {
+      langFlag.src = './imagenes/logos/gb.png';
+      langFlag.alt = 'English';
+    }
+  }
+  updateFlag();
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+    localStorage.setItem('lang', currentLang);
+    updateFlag();
+    // Aquí podrías llamar a una función para cambiar el idioma del sitio
+  });
+}
 // Carrito de compras
 // Al iniciar, intentamos recuperar el carrito guardado en localStorage
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
