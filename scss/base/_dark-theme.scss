@@ -1,3 +1,11 @@
+/* Usados y Luthier: borde blanco solo en <p> en modo oscuro, sin border-radius */
+.dark-theme .usados p,
+[data-theme="dark"] .usados p,
+.dark-theme .luthier p,
+[data-theme="dark"] .luthier p {
+  border: 2px solid #fff !important;
+  border-radius: 0 !important;
+}
 .dark-theme .guitarras-destacados .contenedor-guitarras > div,
 [data-theme="dark"] .guitarras-destacados .contenedor-guitarras > div {
   background-color: #333 !important;
