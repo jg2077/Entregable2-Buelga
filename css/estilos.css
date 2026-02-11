@@ -66,6 +66,31 @@ header div .carrito {
   cursor: pointer;
 }
 
+/* Carrito líneas blancas en modo oscuro */
+.dark-theme .carrito,
+[data-theme="dark"] .carrito {
+  filter: brightness(0) invert(1);
+  padding: 2px;
+}
+
+/* Total y cantidad de items en blanco en modo oscuro */
+.dark-theme #carrito-total,
+[data-theme="dark"] #carrito-total,
+.dark-theme #carrito-count,
+[data-theme="dark"] #carrito-count {
+  color: #fff !important;
+}
+.dark-theme nav #carrito-total,
+[data-theme="dark"] nav #carrito-total,
+.dark-theme nav #carrito-count,
+[data-theme="dark"] nav #carrito-count {
+  color: #fff !important;
+}
+.dark-theme .navbar-text #carrito-count,
+[data-theme="dark"] .navbar-text #carrito-count {
+  color: #fff !important;
+}
+
 .ofertas-destacados .contenedor-ofertas > div {
   border: solid;
   width: 300px;
