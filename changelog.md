@@ -6,9 +6,9 @@ uso de teclado para navegar
 
 Etiquetas ARIA
 
-Texto alternativo en imágenes
-
 Usa aria-label o aria-describedby en botones icónicos (ejemplo: carrito 🛒).
 
+carrito total y unidades no tab
 
+carrusel transparente en modo oscuro pasa de rosa a violeta
 
