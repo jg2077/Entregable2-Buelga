@@ -134,14 +134,26 @@ section .titulo-rosa {
   padding: 10px;
   border: black solid;
 }
+section {
+  /* Si prefieres renombrar: .carousel--pink en lugar de .pink-background */
+}
 section .pink-background {
   background-color: rgba(255, 0, 208, 0.537);
+}
+section {
+  /* Bootstrap carousel - mantengo la estructura base y anido modificaciones */
+}
+section .carousel-inner {
+  /* Para títulos y párrafos dentro del carousel */
 }
 section .carousel-inner h5 {
   color: rgb(255, 255, 255) !important;
 }
 section .carousel-inner p {
   color: rgb(255, 255, 255) !important;
+}
+section .carousel {
+  /* caption como componente anidado */
 }
 section .carousel .carousel-caption {
   position: absolute;
@@ -794,6 +806,13 @@ a {
 /* Ofertas destacadas modo oscuro */
 .dark-theme .ofertas-destacados .contenedor-ofertas > div,
 [data-theme=dark] .ofertas-destacados .contenedor-ofertas > div {
+  background-color: #333 !important;
+  border: 2px solid #fff !important;
+}
+
+/* Accesorios grid: igual fondo al footer en modo oscuro */
+.dark-theme .grid-accesorios > .grid-item,
+[data-theme=dark] .grid-accesorios > .grid-item {
   background-color: #333 !important;
   border: 2px solid #fff !important;
 }
