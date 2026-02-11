@@ -1,3 +1,24 @@
+.dark-theme .guitarras-destacados .contenedor-guitarras > div,
+[data-theme="dark"] .guitarras-destacados .contenedor-guitarras > div {
+  background-color: #333 !important;
+  border: 2px solid #fff !important;
+}
+
+.dark-theme .guitarras-destacados h3,
+[data-theme="dark"] .guitarras-destacados h3 {
+  color: #fff !important;
+}
+
+.dark-theme .bajos-destacados .contenedor-bajos > div,
+[data-theme="dark"] .bajos-destacados .contenedor-bajos > div {
+  background-color: #333 !important;
+  border: 2px solid #fff !important;
+}
+
+.dark-theme .bajos-destacados h3,
+[data-theme="dark"] .bajos-destacados h3 {
+  color: #fff !important;
+}
 /*** dark theme **/
 
 :root {
@@ -37,4 +58,16 @@
 .dark-theme .muted,
 [data-theme="dark"] .muted {
   color: var(--dm-muted);
+}
+
+/* Ofertas destacadas modo oscuro */
+.dark-theme .ofertas-destacados .contenedor-ofertas > div,
+[data-theme="dark"] .ofertas-destacados .contenedor-ofertas > div {
+  background-color: #333 !important;
+  border: 2px solid #fff !important;
+}
+
+.dark-theme .ofertas-destacados h3,
+[data-theme="dark"] .ofertas-destacados h3 {
+  color: #fff !important;
 }
