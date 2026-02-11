@@ -1,0 +1,25 @@
+/*** dark theme **/
+
+:root {
+  --dm-bg: #0f1113;
+  --dm-surface: #121416;
+  --dm-text: #e6e6e6;
+  --dm-muted: #9a9a9a;
+  --dm-accent: #bb86fc;
+}
+
+.dark-theme,
+[data-theme="dark"] {
+  background-color: var(--dm-bg);
+  color: var(--dm-text);
+}
+
+.dark-theme a,
+[data-theme="dark"] a {
+  color: var(--dm-accent);
+}
+
+.dark-theme .muted,
+[data-theme="dark"] .muted {
+  color: var(--dm-muted);
+}

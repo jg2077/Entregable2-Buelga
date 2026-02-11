@@ -1,0 +1,25 @@
+/*** Protanopia-friendly theme **/
+
+:root {
+  --p-bg: #fbfbfb;
+  --p-surface: #ffffff;
+  --p-text: #0b1020;
+  --p-muted: #6e7680;
+  --p-accent: #0077b6; /* blue accent avoids red confusion */
+}
+
+.protanopia-theme,
+[data-theme="protanopia"] {
+  background-color: var(--p-bg);
+  color: var(--p-text);
+}
+
+.protanopia-theme a,
+[data-theme="protanopia"] a {
+  color: var(--p-accent);
+}
+
+.protanopia-theme .muted,
+[data-theme="protanopia"] .muted {
+  color: var(--p-muted);
+}

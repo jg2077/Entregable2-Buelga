@@ -1,0 +1,25 @@
+/*** Deuteranopia-friendly theme **/
+
+:root {
+  --d-bg: #f8f9fb;
+  --d-surface: #ffffff;
+  --d-text: #0b1b2b;
+  --d-muted: #6b7684;
+  --d-accent: #2b8cbe; /* blue accent (safe for deuteranopia) */
+}
+
+.deuteranopia-theme,
+[data-theme="deuteranopia"] {
+  background-color: var(--d-bg);
+  color: var(--d-text);
+}
+
+.deuteranopia-theme a,
+[data-theme="deuteranopia"] a {
+  color: var(--d-accent);
+}
+
+.deuteranopia-theme .muted,
+[data-theme="deuteranopia"] .muted {
+  color: var(--d-muted);
+}
