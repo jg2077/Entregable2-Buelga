@@ -11,6 +11,37 @@ const carritoTotalNavbar = document.getElementById('carrito-total-navbar');
 const carritoLogo = document.getElementById('carrito-logo');
 const btnVaciar = document.getElementById('vaciar-carrito');
 
+// Theme toggle elements (may not exist on all pages)
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+
+function applyTheme(theme) {
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.classList.add('dark-theme');
+     if (themeIcon) { themeIcon.classList.remove('bi-sun'); themeIcon.classList.add('bi-moon'); }
+  } else {
+     // treat any non-'dark' as clear-theme
+     document.documentElement.setAttribute('data-theme', 'clear');
+     document.documentElement.classList.add('clear-theme');
+     document.documentElement.classList.remove('dark-theme');
+     if (themeIcon) { themeIcon.classList.remove('bi-moon'); themeIcon.classList.add('bi-sun'); }
+  }
+  localStorage.setItem('theme', theme);
+}
+
+// Inicializar tema desde localStorage
+const savedTheme = localStorage.getItem('theme') || 'light';
+applyTheme(savedTheme || 'clear');
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+      const current = localStorage.getItem('theme') === 'dark' ? 'dark' : 'clear';
+      const next = current === 'dark' ? 'clear' : 'dark';
+    applyTheme(next);
+  });
+}
+
 // Evento para mostrar/ocultar el carrito al hacer clic en el logo
 carritoLogo.addEventListener('click', () => {
   carritoContainer.style.display =

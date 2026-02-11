@@ -1,15 +1,23 @@
 /*** dark theme **/
 
 :root {
-  --dm-bg: #0f1113;
+  --dm-bg: #000000;
   --dm-surface: #121416;
   --dm-text: #e6e6e6;
   --dm-muted: #9a9a9a;
   --dm-accent: #bb86fc;
 }
 
+/* Apply theme colors at root level */
 .dark-theme,
 [data-theme="dark"] {
+  background-color: var(--dm-bg);
+  color: var(--dm-text);
+}
+
+/* Ensure body becomes black when dark theme is active */
+.dark-theme body,
+[data-theme="dark"] body {
   background-color: var(--dm-bg);
   color: var(--dm-text);
 }
