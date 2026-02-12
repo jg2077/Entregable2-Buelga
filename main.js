@@ -74,9 +74,10 @@ const rutaJSON = window.location.pathname.includes('/pages/')
   ? '../productos.json'
   : './productos.json';
 
-// --- ASINCRONISMO: Cargar productos usando fetch ---
-// Usamos fetch para obtener los datos del archivo productos.json de forma asíncrona.
-// Esto permite que la página no se bloquee mientras se cargan los datos y mejora la experiencia de usuario.
+
+
+// --- ASINCRONISMO: Cargar productos usando async/await (VERSIÓN ANTERIOR, AHORA COMENTADA) ---
+/*
 async function cargarProductos() {
   try {
     // Esperamos la respuesta del fetch
@@ -124,8 +125,50 @@ async function cargarProductos() {
     mostrarMensajeTemporal('No se pudieron cargar los productos.', 3500);
   }
 }
+*/
 
-// Llamamos a la función asíncrona para cargar los productos al iniciar la página
+// --- ASINCRONISMO: Cargar productos usando promesas (then/catch) ---
+// MODIFICACIÓN: Ahora se usa la sintaxis de promesas explícitas (then/catch) en vez de async/await.
+function cargarProductos() {
+  fetch(rutaJSON)
+    .then(res => res.json()) // Esto también devuelve una promesa
+    .then(data => {
+      // Unimos todas las categorías en un solo array para facilitar la búsqueda
+      const productos = [
+        ...(data["ofertas-destacados"] || []),
+        ...(data.guitarras || []),
+        ...(data.bajos || []),
+        ...(data.accesorios || []),
+      ];
+
+      // Seleccionamos todos los botones de compra
+      const botones = document.querySelectorAll('.boton');
+
+      botones.forEach(boton => {
+        const id = parseInt(boton.dataset.id, 10);
+        // Buscamos el producto correspondiente por id
+        const producto = productos.find(p => p.id === id);
+
+        if (producto) {
+          // Mostramos el precio en el botón
+          boton.textContent = `Comprar $${producto.precio}`;
+
+          // Evento click para agregar al carrito
+          boton.addEventListener('click', () => agregarAlCarrito(producto));
+        }
+      });
+
+      // Al cargar la página, actualizamos el carrito en pantalla
+      actualizarCarrito();
+    })
+    .catch(error => {
+      // Si ocurre un error, lo mostramos en consola y avisamos al usuario
+      mostrarMensajeTemporal('No se pudieron cargar los productos.', 3500);
+      console.error('Error cargando productos:', error);
+    });
+}
+
+// Llamamos a la función para cargar los productos al iniciar la página
 cargarProductos();
 
 
