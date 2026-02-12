@@ -145,18 +145,24 @@ function mostrarMensajeTemporal(mensaje, duracion = 2000) {
 
 // Función para agregar productos al carrito
 function agregarAlCarrito(producto) {
-  const item = carrito.find(p => p.id === producto.id);
+  try {
+    const item = carrito.find(p => p.id === producto.id);
 
-  if (item) {
-    item.cantidad++;
-  } else {
-    carrito.push({ ...producto, cantidad: 1 });
+    if (item) {
+      item.cantidad++;
+    } else {
+      carrito.push({ ...producto, cantidad: 1 });
+    }
+
+    guardarCarrito();   // Guardar en localStorage
+    actualizarCarrito();
+    // Mostrar mensaje temporal usando temporizador
+    mostrarMensajeTemporal('Producto agregado al carrito');
+  } catch (error) {
+    // Captura errores inesperados en la operación crítica
+    console.error('Error al agregar producto al carrito:', error);
+    mostrarMensajeTemporal('Error al agregar producto al carrito.', 3500);
   }
-
-  guardarCarrito();   // Guardar en localStorage
-  actualizarCarrito();
-  // Mostrar mensaje temporal usando temporizador
-  mostrarMensajeTemporal('Producto agregado al carrito');
 }
 
 
@@ -188,9 +194,16 @@ function actualizarCarrito() {
 
 // Función para eliminar productos del carrito
 function eliminarDelCarrito(id) {
-  carrito = carrito.filter(p => p.id !== id);
-  guardarCarrito();  
-  actualizarCarrito();
+  try {
+    carrito = carrito.filter(p => p.id !== id);
+    guardarCarrito();  
+    actualizarCarrito();
+    mostrarMensajeTemporal('Producto eliminado del carrito', 2000);
+  } catch (error) {
+    // Captura errores inesperados en la operación crítica
+    console.error('Error al eliminar producto del carrito:', error);
+    mostrarMensajeTemporal('Error al eliminar producto del carrito.', 3500);
+  }
 }
 
 // Vaciar carrito
