@@ -105,6 +105,20 @@ async function cargarProductos() {
 cargarProductos();
 
 
+
+// Función para mostrar un mensaje temporal en pantalla
+// Utiliza setTimeout para ocultar el mensaje después de unos segundos
+function mostrarMensajeTemporal(mensaje, duracion = 2000) {
+  const mensajeDiv = document.getElementById('mensaje-temporal');
+  if (!mensajeDiv) return;
+  mensajeDiv.textContent = mensaje;
+  mensajeDiv.style.display = 'block';
+  // Oculta el mensaje después de 'duracion' milisegundos
+  setTimeout(() => {
+    mensajeDiv.style.display = 'none';
+  }, duracion);
+}
+
 // Función para agregar productos al carrito
 function agregarAlCarrito(producto) {
   const item = carrito.find(p => p.id === producto.id);
@@ -117,6 +131,8 @@ function agregarAlCarrito(producto) {
 
   guardarCarrito();   // Guardar en localStorage
   actualizarCarrito();
+  // Mostrar mensaje temporal usando temporizador
+  mostrarMensajeTemporal('Producto agregado al carrito');
 }
 
 
