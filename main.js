@@ -1,26 +1,6 @@
-// Selector de idioma: alternar bandera
-const langToggle = document.getElementById('lang-toggle');
-const langFlag = document.getElementById('lang-flag');
-if (langToggle && langFlag) {
-  let currentLang = localStorage.getItem('lang') || 'es';
-  // Detectar ruta correcta de las banderas según la ubicación del HTML
-  const flagPath = window.location.pathname.includes('/pages/') ? '../imagenes/logos/' : './imagenes/logos/';
-  function updateFlag() {
-    if (currentLang === 'es') {
-      langFlag.src = flagPath + 'es.png';
-      langFlag.alt = 'Español';
-    } else {
-      langFlag.src = flagPath + 'gb.png';
-      langFlag.alt = 'English';
-    }
-  }
-  updateFlag();
-  langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'es' ? 'en' : 'es';
-    localStorage.setItem('lang', currentLang);
-    updateFlag();
-    // Aquí podrías llamar a una función para cambiar el idioma del sitio
-  });
+function restaurarPagina() {
+  // Recargar la página para restaurar el idioma original
+  window.location.reload();
 }
 // Carrito de compras
 // Al iniciar, intentamos recuperar el carrito guardado en localStorage
