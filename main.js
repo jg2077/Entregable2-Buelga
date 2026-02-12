@@ -4,7 +4,23 @@ function restaurarPagina() {
 }
 // Carrito de compras
 // Al iniciar, intentamos recuperar el carrito guardado en localStorage
-let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+// Usamos try/catch para evitar que el carrito se rompa si el JSON está mal formado
+let carrito = [];
+try {
+  const carritoGuardado = localStorage.getItem('carrito');
+  if (carritoGuardado) {
+    carrito = JSON.parse(carritoGuardado);
+    if (!Array.isArray(carrito)) throw new Error('El carrito no es un array');
+  }
+} catch (e) {
+  carrito = [];
+  // Mostrar mensaje temporal si hay error de formato en el carrito
+  if (typeof mostrarMensajeTemporal === 'function') {
+    mostrarMensajeTemporal('Error en los datos del carrito. Se ha reiniciado.', 3500);
+  } else {
+    alert('Error en los datos del carrito. Se ha reiniciado.');
+  }
+}
 
 // Seleccionar elementos del DOM
 const carritoContainer = document.getElementById('carrito-container');
@@ -65,15 +81,22 @@ async function cargarProductos() {
   try {
     // Esperamos la respuesta del fetch
     const res = await fetch(rutaJSON);
-    // Convertimos la respuesta a JSON
-    const data = await res.json();
+    let data;
+    try {
+      // Convertimos la respuesta a JSON, puede lanzar error si el formato es inválido
+      data = await res.json();
+    } catch (jsonError) {
+      // Error de formato en el JSON de productos
+      mostrarMensajeTemporal('Error de formato en productos.json', 3500);
+      throw jsonError;
+    }
 
     // Unimos todas las categorías en un solo array para facilitar la búsqueda
     const productos = [
-      ...data["ofertas-destacados"],
-      ...data.guitarras,
-      ...data.bajos,
-      ...data.accesorios,
+      ...data["ofertas-destacados"] || [],
+      ...data.guitarras || [],
+      ...data.bajos || [],
+      ...data.accesorios || [],
     ];
 
     // Seleccionamos todos los botones de compra
@@ -96,8 +119,9 @@ async function cargarProductos() {
     // Al cargar la página, actualizamos el carrito en pantalla
     actualizarCarrito();
   } catch (error) {
-    // Si ocurre un error, lo mostramos en consola
+    // Si ocurre un error, lo mostramos en consola y avisamos al usuario
     console.error('Error cargando productos:', error);
+    mostrarMensajeTemporal('No se pudieron cargar los productos.', 3500);
   }
 }
 
