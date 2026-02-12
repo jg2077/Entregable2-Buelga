@@ -52,16 +52,23 @@ carritoLogo.addEventListener('click', () => {
     carritoContainer.style.display === 'none' ? 'block' : 'none';
 });
 
+
 // Detectar ruta correcta del JSON según la ubicación del HTML
 const rutaJSON = window.location.pathname.includes('/pages/')
   ? '../productos.json'
   : './productos.json';
 
-// Cargar productos desde el JSON
-fetch(rutaJSON)
-  .then(res => res.json())
-  .then(data => {
-    // Combinar todas las categorías en un solo array
+// --- ASINCRONISMO: Cargar productos usando fetch ---
+// Usamos fetch para obtener los datos del archivo productos.json de forma asíncrona.
+// Esto permite que la página no se bloquee mientras se cargan los datos y mejora la experiencia de usuario.
+async function cargarProductos() {
+  try {
+    // Esperamos la respuesta del fetch
+    const res = await fetch(rutaJSON);
+    // Convertimos la respuesta a JSON
+    const data = await res.json();
+
+    // Unimos todas las categorías en un solo array para facilitar la búsqueda
     const productos = [
       ...data["ofertas-destacados"],
       ...data.guitarras,
@@ -69,15 +76,16 @@ fetch(rutaJSON)
       ...data.accesorios,
     ];
 
-    // Seleccionar todos los botones
+    // Seleccionamos todos los botones de compra
     const botones = document.querySelectorAll('.boton');
 
     botones.forEach(boton => {
       const id = parseInt(boton.dataset.id, 10);
+      // Buscamos el producto correspondiente por id
       const producto = productos.find(p => p.id === id);
 
       if (producto) {
-        // Mostrar precio en el botón
+        // Mostramos el precio en el botón
         boton.textContent = `Comprar $${producto.precio}`;
 
         // Evento click para agregar al carrito
@@ -87,8 +95,14 @@ fetch(rutaJSON)
 
     // Al cargar la página, actualizamos el carrito en pantalla
     actualizarCarrito();
-  })
-  .catch(error => console.error('Error cargando productos:', error));
+  } catch (error) {
+    // Si ocurre un error, lo mostramos en consola
+    console.error('Error cargando productos:', error);
+  }
+}
+
+// Llamamos a la función asíncrona para cargar los productos al iniciar la página
+cargarProductos();
 
 
 // Función para agregar productos al carrito
