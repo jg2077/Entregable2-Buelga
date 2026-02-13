@@ -1,11 +1,14 @@
 {
+  "navbar": {
+    "nav_home": "Home",
+    "nav_guitarras": "Guitar & Bass",
+    "nav_custom": "Custom Shop",
+    "nav_accesorios": "Accessories",
+    "nav_sobre_nosotros": "About Us"
+  },
   "index": {
       "main_title": "AMP music your musical instrument importer",
       "ofertas_title": "Featured Offers",
-      "mustang": "Fender Mustang",
-      "telecaster": "Fender Telecaster",
-      "ac30": "Fender AC-30",
-      "jaguar": "Fender Jaguar",
       "carrito": "Cart",
       "carrito_total": "Total: $0",
       "vaciar_carrito": "Empty cart",
@@ -16,34 +19,12 @@
       "lutheria": "Lutherie",
       "producto_destacado": "Featured Product",
       "starcaster": "Fender Starcaster",
-      "footer_year": "© 2025",
-      "footer_text": "Amp music",
-    "nav_home": "Home",
-    "nav_guitarras": "Guitar & Bass",
-    "nav_custom": "Custom Shop",
-    "nav_accesorios": "Accessories",
-    "nav_sobre_nosotros": "About Us",
-    "title": "AMP music your musical instrument importer",
-    "buy": "Buy",
-    "cart": "Cart",
-    "empty_cart": "Empty cart",
-    "total": "Total"
+      "title": "AMP music your musical instrument importer"
   },
-  "accesorios": {
-    "title": "Our accessories",
-    "correas": "Straps",
-    "puas": "Picks",
-    "cables": "Cables",
-    "cases": "Cases",
-    "cuerdas": "Strings",
-    "buzo": "Sweatshirt",
-    "fundas": "Covers",
-    "tuners": "Tuners",
-    "stands": "Stands",
-    "buy": "Buy",
-    "cart": "Cart",
-    "empty_cart": "Empty cart",
-    "total": "Total"
+   "guitarras": {
+    "main_title": "Discover our guitars and basses",
+    "guitarras_destacadas": "Featured Guitars",
+    "bajos_destacados": "Featured Basses"
   },
   "custom": {
       "main_title": "Discover our custom shop",
@@ -58,39 +39,19 @@
       "step3_desc": "Your instrument is manufactured in our Corona, California plant and goes through Fender's inspection process.",
       "step4": "04 We ship it",
       "step4_desc": "We build and ship your order within 30 days.",
-      "carousel": "Choose one of our available models.",
-      "stratocaster": "Fender Stratocaster",
-      "strato_acustic": "Fender Strato Acustic",
-      "telecaster": "Fender Telecaster",
-      "footer_year": "© 2025",
-      "footer_text": "Amp music"
+      "carousel": "Choose one of our available models."
   },
-  "guitarras": {
-    "main_title": "Discover our guitars and basses",
-    "guitarras_destacadas": "Featured Guitars",
-    "bajos_destacados": "Featured Basses",
-    "jazzmaster": "Fender Jazzmaster",
-    "meteora": "Fender Meteora",
-    "stratocaster": "Fender Stratocaster",
-    "telecaster": "Fender Telecaster",
-    "tele_custom": "Fender Tele Custom",
-    "duosonic": "Fender Duo-Sonic",
-    "strato_left": "Fender Strato Left",
-    "tele_thinline": "Fender Tele Thinline",
-    "jazz": "Fender Jazz",
-    "precision": "Fender Precision",
-    "mustang": "Fender Mustang",
-    "jaguar": "Fender Jaguar",
-    "meteora_bass": "Fender Meteora Bass",
-    "jazz5": "Fender Jazz 5",
-    "tele_bass": "Fender Telecaster Bass",
-    "vi": "Fender VI",
-    "buy": "Buy",
-    "cart": "Cart",
-    "empty_cart": "Empty cart",
-    "total": "Total",
-    "footer_year": "© 2025",
-    "footer_text": "Amp music"
+  "accesorios": {
+    "title": "Our accessories",
+    "correas": "Straps",
+    "puas": "Picks",
+    "cables": "Cables",
+    "cases": "Cases",
+    "cuerdas": "Strings",
+    "buzo": "Sweatshirt",
+    "fundas": "Covers",
+    "tuners": "Tuners",
+    "stands": "Stands"
   },
   "sobre_nosotros": {
     "title": "Our history",
@@ -98,11 +59,6 @@
     "contact_title": "Leave us your email with your request",
     "email_label": "Your email address",
     "order_label": "Tell us about your request",
-    "where_title": "Where to find us?",
-    "locations": {
-      "San Fernando": "San Fernando",
-      "Tigre": "Tigre",
-      "Pacheco": "Pacheco"
-    }
+    "where_title": "Where to find us?"
   }
 }
