@@ -1,0 +1,13 @@
+{
+  "title": "Our history",
+  "desc": "For more than ten years we have imported original Fender instruments, becoming leaders in the Argentine market. We have stores in the north area, offering variety, specialized advice and guaranteed quality. Thanks to our experience, today we are sales leaders in the region.",
+  "contact_title": "Leave us your email with your request",
+  "email_label": "Your email address",
+  "order_label": "Tell us about your request",
+  "where_title": "Where to find us?",
+  "locations": {
+    "San Fernando": "San Fernando",
+    "Tigre": "Tigre",
+    "Pacheco": "Pacheco"
+  }
+}
