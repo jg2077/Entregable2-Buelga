@@ -1,7 +1,6 @@
-hacer andar los partials nuevos de modo oscuro, daltonismo y contraste
+hacer andar los partials de daltonismo y alto contraste
 
 cambio de idioma
 
-Etiquetas ARIA
+Etiquetas ARIA: aria-label o aria-describedby en botones icónicos (ejemplo: carrito 🛒).
 
-Usa aria-label o aria-describedby en botones icónicos (ejemplo: carrito 🛒).
