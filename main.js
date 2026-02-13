@@ -28,6 +28,7 @@ const carritoLista = document.getElementById('carrito-lista');
 const carritoTotal = document.getElementById('carrito-total');
 const carritoCount = document.getElementById('carrito-count');
 const carritoTotalNavbar = document.getElementById('carrito-total-navbar');
+const carritoLogoBtn = document.getElementById('carrito-logo-btn');
 const carritoLogo = document.getElementById('carrito-logo');
 const btnVaciar = document.getElementById('vaciar-carrito');
 
@@ -66,11 +67,21 @@ if (themeToggle) {
 const carritoModal = document.getElementById('carrito-modal');
 const cerrarCarritoModal = document.getElementById('cerrar-carrito-modal');
 
-// Mostrar modal al clickear el logo del carrito
-carritoLogo.addEventListener('click', () => {
-  carritoModal.style.display = 'block';
-  actualizarCarrito();
-});
+// Mostrar modal al clickear el logo del carrito o su botón
+if (carritoLogoBtn) {
+  carritoLogoBtn.addEventListener('click', () => {
+    carritoModal.style.display = 'block';
+    actualizarCarrito();
+  });
+  // Accesibilidad: abrir con Enter o Space
+  carritoLogoBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      carritoModal.style.display = 'block';
+      actualizarCarrito();
+    }
+  });
+}
 
 // Cerrar modal al clickear la X
 cerrarCarritoModal.addEventListener('click', () => {
@@ -248,7 +259,8 @@ function actualizarCarrito() {
   });
 
   carritoTotal.textContent = `Total: $${total}`;
-  carritoCount.textContent = `${count} / $${total}`;
+  if (carritoCount) carritoCount.textContent = `${count}`;
+  if (carritoTotalNavbar) carritoTotalNavbar.textContent = `$${total}`;
 }
 
 // Función para eliminar productos del carrito
