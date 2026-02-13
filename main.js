@@ -62,10 +62,26 @@ if (themeToggle) {
   });
 }
 
-// Evento para mostrar/ocultar el carrito al hacer clic en el logo
+// Modal carrito
+const carritoModal = document.getElementById('carrito-modal');
+const cerrarCarritoModal = document.getElementById('cerrar-carrito-modal');
+
+// Mostrar modal al clickear el logo del carrito
 carritoLogo.addEventListener('click', () => {
-  carritoContainer.style.display =
-    carritoContainer.style.display === 'none' ? 'block' : 'none';
+  carritoModal.style.display = 'block';
+  actualizarCarrito();
+});
+
+// Cerrar modal al clickear la X
+cerrarCarritoModal.addEventListener('click', () => {
+  carritoModal.style.display = 'none';
+});
+
+// Cerrar modal al clickear fuera del contenido
+window.addEventListener('click', (e) => {
+  if (e.target === carritoModal) {
+    carritoModal.style.display = 'none';
+  }
 });
 
 
@@ -220,7 +236,7 @@ function actualizarCarrito() {
     count += item.cantidad;
 
     const li = document.createElement('li');
-    li.textContent = `${item.nombre} x${item.cantidad} - $${item.precio * item.cantidad}`;
+    li.innerHTML = `<span>${item.nombre} x${item.cantidad} - $${item.precio * item.cantidad}</span>`;
 
     // Botón eliminar
     const btnEliminar = document.createElement('button');
@@ -232,7 +248,7 @@ function actualizarCarrito() {
   });
 
   carritoTotal.textContent = `Total: $${total}`;
-  carritoCount.textContent = `${count} items / $${total}`; // actualizar contador con items y total
+  carritoCount.textContent = `${count} / $${total}`;
 }
 
 // Función para eliminar productos del carrito
