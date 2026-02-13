@@ -66,6 +66,15 @@ header div .carrito {
   cursor: pointer;
 }
 
+/* Quitar subrayado de los botones del navbar del carrito */
+#carrito-count, #carrito-total-navbar, #carrito-logo-btn {
+  text-decoration: none !important;
+}
+#carrito-count:focus, #carrito-total-navbar:focus, #carrito-logo-btn:focus {
+  outline: 2px solid #ff00d0;
+  box-shadow: 0 0 0 2px #ff00d033;
+}
+
 .ofertas-destacados .contenedor-ofertas > div {
   border: solid;
   width: 300px;

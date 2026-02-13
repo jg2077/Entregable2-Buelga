@@ -73,8 +73,15 @@
                             <i id="theme-icon" class="bi bi-sun"></i>
                         </button>
                         <!-- contador y id al logo -->
-                        <span id="carrito-count">0</span>
-                        <img src="../imagenes/logos/carrito.png" alt="carrito" id="carrito-logo" class="carrito" style="cursor:pointer;">
+                        <button id="carrito-count" class="btn btn-link m-0 p-0" tabindex="0" aria-label="Cantidad de productos en el carrito" style="outline:none; background:none; color:inherit; font:inherit; text-decoration:none;">
+                            0
+                        </button>
+                        <button id="carrito-total-navbar" class="btn btn-link m-0 p-0" tabindex="0" aria-label="Total del carrito" style="outline:none; background:none; color:inherit; font:inherit; text-decoration:none;">
+                            $0
+                        </button>
+                        <button id="carrito-logo-btn" class="btn btn-link m-0 p-0" tabindex="0" aria-label="Abrir carrito" style="outline:none; background:none; text-decoration:none;">
+                            <img src="../imagenes/logos/carrito.png" alt="carrito" id="carrito-logo" class="carrito" style="cursor:pointer;">
+                        </button>
                         <!-- Modal Carrito -->
                         <div id="carrito-modal" class="modal-carrito" style="display:none;">
                             <div class="modal-carrito-content">
