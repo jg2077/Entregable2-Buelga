@@ -148,27 +148,18 @@ section .titulo-rosa {
   padding: 10px;
   border: black solid;
 }
-section {
-  /* Si prefieres renombrar: .carousel--pink en lugar de .pink-background */
-}
+
 section .pink-background {
   background-color: rgb(255, 0, 208) !important;
 }
-section {
-  /* Bootstrap carousel - mantengo la estructura base y anido modificaciones */
-}
-section .carousel-inner {
-  /* Para títulos y párrafos dentro del carousel */
-}
+
 section .carousel-inner h5 {
   color: rgb(255, 255, 255) !important;
 }
 section .carousel-inner p {
   color: rgb(255, 255, 255) !important;
 }
-section .carousel {
-  /* caption como componente anidado */
-}
+
 section .carousel .carousel-caption {
   position: absolute;
   bottom: 20px;
