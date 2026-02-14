@@ -51,6 +51,20 @@
   padding: 2px;
 }
 
+/* Quitar subrayado de los botones del navbar del carrito */
+#carrito-count, #carrito-total-navbar, #carrito-logo-btn {
+  text-decoration: none !important;
+  }
+
+  .dark-theme #carrito-count,
+  .dark-theme #carrito-total-navbar {
+    color: white !important;
+}
+#carrito-count:focus, #carrito-total-navbar:focus, #carrito-logo-btn:focus {
+  outline: 2px solid #ff00d0;
+  box-shadow: 0 0 0 2px #ff00d033;
+}
+
 /* Total y cantidad de items en blanco en modo oscuro */
 .dark-theme #carrito-total,
 [data-theme="dark"] #carrito-total,
