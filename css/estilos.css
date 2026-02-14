@@ -66,20 +66,6 @@ header div .carrito {
   cursor: pointer;
 }
 
-/* Quitar subrayado de los botones del navbar del carrito */
-#carrito-count, #carrito-total-navbar, #carrito-logo-btn {
-  text-decoration: none !important;
-  }
-
-  .dark-theme #carrito-count,
-  .dark-theme #carrito-total-navbar {
-    color: white !important;
-}
-#carrito-count:focus, #carrito-total-navbar:focus, #carrito-logo-btn:focus {
-  outline: 2px solid #ff00d0;
-  box-shadow: 0 0 0 2px #ff00d033;
-}
-
 .ofertas-destacados .contenedor-ofertas > div {
   border: solid;
   width: 300px;
@@ -148,18 +134,27 @@ section .titulo-rosa {
   padding: 10px;
   border: black solid;
 }
-
-section .pink-background {
-  background-color: rgb(255, 0, 208) !important;
+section {
+  /* Si prefieres renombrar: .carousel--pink en lugar de .pink-background */
 }
-
+section .pink-background {
+  background-color: rgba(255, 0, 208, 0.537);
+}
+section {
+  /* Bootstrap carousel - mantengo la estructura base y anido modificaciones */
+}
+section .carousel-inner {
+  /* Para títulos y párrafos dentro del carousel */
+}
 section .carousel-inner h5 {
   color: rgb(255, 255, 255) !important;
 }
 section .carousel-inner p {
   color: rgb(255, 255, 255) !important;
 }
-
+section .carousel {
+  /* caption como componente anidado */
+}
 section .carousel .carousel-caption {
   position: absolute;
   bottom: 20px;
@@ -771,6 +766,21 @@ a {
 [data-theme=dark] header div .carrito {
   filter: brightness(0) invert(1);
   padding: 2px;
+}
+
+/* Quitar subrayado de los botones del navbar del carrito */
+#carrito-count, #carrito-total-navbar, #carrito-logo-btn {
+  text-decoration: none !important;
+}
+
+.dark-theme #carrito-count,
+.dark-theme #carrito-total-navbar {
+  color: white !important;
+}
+
+#carrito-count:focus, #carrito-total-navbar:focus, #carrito-logo-btn:focus {
+  outline: 2px solid #ff00d0;
+  box-shadow: 0 0 0 2px rgba(255, 0, 208, 0.2);
 }
 
 /* Total y cantidad de items en blanco en modo oscuro */
