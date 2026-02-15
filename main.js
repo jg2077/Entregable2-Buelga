@@ -40,13 +40,18 @@ function applyTheme(theme) {
   if (theme === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     document.documentElement.classList.add('dark-theme');
-     if (themeIcon) { themeIcon.classList.remove('bi-sun'); themeIcon.classList.add('bi-moon'); }
+    document.documentElement.classList.remove('clear-theme');
+    if (themeIcon) {
+      themeIcon.innerHTML = `<svg id="icon-moon-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-moon-white"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="#222" stroke="#fff"/></svg>`;
+    }
   } else {
-     // treat any non-'dark' as clear-theme
-     document.documentElement.setAttribute('data-theme', 'clear');
-     document.documentElement.classList.add('clear-theme');
-     document.documentElement.classList.remove('dark-theme');
-     if (themeIcon) { themeIcon.classList.remove('bi-moon'); themeIcon.classList.add('bi-sun'); }
+    // treat any non-'dark' as clear-theme
+    document.documentElement.setAttribute('data-theme', 'clear');
+    document.documentElement.classList.add('clear-theme');
+    document.documentElement.classList.remove('dark-theme');
+    if (themeIcon) {
+      themeIcon.innerHTML = `<svg id="icon-sun-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-sun-black"><circle cx="12" cy="12" r="5" fill="#FFD600" stroke="#000"/><g stroke="#000"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>`;
+    }
   }
   localStorage.setItem('theme', theme);
 }
