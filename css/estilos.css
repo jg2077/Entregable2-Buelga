@@ -168,7 +168,7 @@ section .carousel .carousel-caption {
   border-radius: 5px;
 }
 
-.usados-luthier-padre h3 {
+.usados-luthier-padre .servicios-destacados {
   text-align: center;
   font-size: 35px;
   color: rgb(0, 0, 0);
@@ -714,7 +714,15 @@ a {
   font-style: normal;
 }
 
-/* Usados y Luthier: borde blanco solo en <p> en modo oscuro, sin border-radius */
+/* Borde blanco para Nueva linea rosa y Servicios destacados en modo oscuro */
+[data-theme=dark] .titulo-rosa {
+  border: 2px solid #fff !important;
+}
+
+[data-theme=dark] .servicios-destacados {
+  border: 2px solid #fff !important;
+}
+
 .dark-theme .usados p,
 [data-theme=dark] .usados p,
 .dark-theme .luthier p,
