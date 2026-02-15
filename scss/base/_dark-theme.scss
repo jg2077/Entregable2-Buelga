@@ -162,3 +162,12 @@
 [data-theme="dark"] .bajos-sub {
   border: 2px solid #fff !important;
 }
+/* Borde blanco para ¿Cómo funciona el servicio? en modo oscuro */
+[data-theme="dark"] .como-sub {
+  border: 2px solid #fff !important;
+}
+
+[data-theme="dark"] .titutlo-contacto,
+[data-theme="dark"] .titulo-sobre-nosotros {
+  border: 2px solid #fff !important;
+}
