@@ -714,6 +714,11 @@ a {
   font-style: normal;
 }
 
+.usados-p,
+.luthier-p {
+  border: black solid;
+}
+
 /* Borde blanco para Nueva linea rosa y Servicios destacados en modo oscuro */
 [data-theme=dark] .titulo-rosa {
   border: 2px solid #fff !important;
