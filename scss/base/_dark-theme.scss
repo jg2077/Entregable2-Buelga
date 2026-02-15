@@ -116,6 +116,17 @@
   border: 2px solid #fff !important;
 }
 
+/* Borde blanco para h1 en modo oscuro */
+.dark-theme .titulo-principal, 
+[data-theme="dark"] .titulo-gb, 
+[data-theme="dark"] .titulo-custom, 
+[data-theme="dark"] .titulo-accesorios,
+[data-theme="dark"] .titulo-historia,
+[data-theme="dark"] .titulo-principal {
+  border: 2px solid #fff !important;
+}
+
+
 /* Accesorios grid: igual fondo al footer en modo oscuro */
 .dark-theme .grid-accesorios > .grid-item,
 [data-theme="dark"] .grid-accesorios > .grid-item {
