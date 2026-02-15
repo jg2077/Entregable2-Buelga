@@ -1,4 +1,10 @@
-/* Usados y Luthier: borde blanco solo en <p> en modo oscuro, sin border-radius */
+/* Borde blanco para Nueva linea rosa y Servicios destacados en modo oscuro */
+[data-theme="dark"] .titulo-rosa {
+  border: 2px solid #fff !important;
+}
+[data-theme="dark"] .servicios-destacados {
+  border: 2px solid #fff !important;
+}
 .dark-theme .usados p,
 [data-theme="dark"] .usados p,
 .dark-theme .luthier p,
