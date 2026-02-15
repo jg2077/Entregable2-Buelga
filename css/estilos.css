@@ -881,6 +881,11 @@ a {
   border-radius: 0.375rem !important;
 }
 
+[data-theme=dark] .guitarras-sub,
+[data-theme=dark] .bajos-sub {
+  border: 2px solid #fff !important;
+}
+
 /***************************Variables****************************/
 .titulo-rosa {
   font-style: normal;
