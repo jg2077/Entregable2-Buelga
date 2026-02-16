@@ -46,7 +46,7 @@
       padding: 7px 12px;
       cursor: pointer;
       transition: 0.3s;
-      font-size: 14px;
+      font-size: 0.875rem; // 14px
       font-family: 'Roboto', sans-serif;
 
       &:hover {
@@ -62,7 +62,7 @@
 
   .titulo-principal {
     text-align: center;
-    font-size: 45px;
+    font-size: 2.8125rem; // 45px
     color: white;
     background-color: red;
     margin: 10px;
@@ -73,14 +73,6 @@
   h3 {
     margin: 5px;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 1.25rem; // 20px
   }
 }
-
-// .ofertas-destacados div a {
-//   text-decoration: none;
-//   /*quita el subrayado*/
-//   color: rgb(255, 255, 255);
-//   background-color: black;
-//   padding: 5px;
-// }

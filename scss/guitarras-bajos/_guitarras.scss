@@ -1,7 +1,7 @@
 .guitarras-destacados {
   .titulo-gb{
     text-align: center;
-    font-size: 45px;
+    font-size: 2.8125rem; // 45px
     color: white;
     background-color: red;
     margin: 10px; /*el auto lo centra*/
@@ -11,7 +11,7 @@
 
   h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.1875rem; // 35px
     color: black;
     background-color: rgb(228, 181, 119);
     margin: 10px;
@@ -22,7 +22,7 @@
   h3 {
     margin: 5px;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 1.25rem; // 20px
   }
 
   .contenedor-guitarras {
@@ -71,7 +71,7 @@
         padding: 7px 12px;
         cursor: pointer;
         transition: 0.3s;
-        font-size: 14px;
+        font-size: 0.875rem; // 14px
         font-family: 'Roboto', sans-serif;
 
         &:hover {
