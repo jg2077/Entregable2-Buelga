@@ -182,7 +182,6 @@ section .carousel .carousel-caption {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  margin-top: 20px;
   gap: 20px;
   padding: 20px;
 }
