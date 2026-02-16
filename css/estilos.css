@@ -956,6 +956,14 @@ a {
     width: 100%;
   }
 }
+/**********************media query 768px usados-luthier override grid *********************/
+@media (max-width: 768px) {
+  .usados-luthier-padre .usados-luthier-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+}
 /**********************media query 1000px grilla usados luthier *********************/
 @media (max-width: 1000px) {
   .usados-luthier-container {
@@ -1002,6 +1010,30 @@ a {
   }
   .img9 {
     grid-column: span 2;
+  }
+}
+/**********************media query 625px servicios destacados *********************/
+@media (max-width: 625px) {
+  .usados-luthier-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .usados,
+  .luthier {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+  .usados-item,
+  .luthier-item {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
   }
 }
 /*****************custom-shop how 768****************************/
