@@ -1,7 +1,7 @@
 .bajos-destacados {
   h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.1875rem; // 35px
     color: rgb(0, 0, 0);
     background-color: rgb(228, 181, 119);
     margin: 10px;
@@ -12,7 +12,7 @@
   h3 {
     margin: 5px;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 1.25rem; // 20px
   }
 
   .contenedor-bajos {
@@ -61,7 +61,7 @@
         padding: 7px 12px;
         cursor: pointer;
         transition: 0.3s;
-        font-size: 14px;
+        font-size: 0.875rem; // 14px
         font-family: 'Roboto', sans-serif;
 
         &:hover {

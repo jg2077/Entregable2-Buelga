@@ -12,7 +12,7 @@
 }
 .pie .footer-left {
   justify-self: start;
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
@@ -22,7 +22,7 @@
 }
 .pie .footer-text {
   justify-self: center;
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding: 10px;
   border: 2px solid white;
   border-radius: 10px;
@@ -37,7 +37,7 @@
 }
 .pie .redes-sociales-container a {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: 0.5s;
 }
 .pie .redes-sociales-container a:hover {
@@ -99,7 +99,7 @@ header div .carrito {
   padding: 7px 12px;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
 }
 .ofertas-destacados .contenedor-ofertas div button:hover {
@@ -111,7 +111,7 @@ header div .carrito {
 }
 .ofertas-destacados .titulo-principal {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8125rem;
   color: white;
   background-color: red;
   margin: 10px;
@@ -121,13 +121,13 @@ header div .carrito {
 .ofertas-destacados h3 {
   margin: 5px;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /* Encapsulado por sección para claridad */
 section .titulo-rosa {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: rgb(255, 255, 255);
   background-color: rgb(255, 0, 208);
   margin: 10px;
@@ -170,7 +170,7 @@ section .carousel .carousel-caption {
 
 .usados-luthier-padre .servicios-destacados {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: rgb(0, 0, 0);
   background-color: rgb(228, 181, 119);
   margin: 10px;
@@ -194,7 +194,7 @@ section .carousel .carousel-caption {
 .usados-luthier-padre .usados-luthier-container .usados p,
 .usados-luthier-padre .usados-luthier-container .luthier p {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: rgb(255, 255, 255);
   margin: 10px;
   padding: 10px;
@@ -242,12 +242,12 @@ section .carousel .carousel-caption {
 }
 .novedades-section .novedades-padre h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(255, 255, 255);
 }
 .novedades-section .novedades-padre p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(255, 255, 255);
 }
 .novedades-section .novedades-padre button {
@@ -258,7 +258,7 @@ section .carousel .carousel-caption {
   padding: 7px 12px;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
 }
 .novedades-section .novedades-padre button:hover {
@@ -267,7 +267,7 @@ section .carousel .carousel-caption {
 
 .guitarras-destacados .titulo-gb {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8125rem;
   color: white;
   background-color: red;
   margin: 10px; /*el auto lo centra*/
@@ -276,7 +276,7 @@ section .carousel .carousel-caption {
 }
 .guitarras-destacados h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: black;
   background-color: rgb(228, 181, 119);
   margin: 10px;
@@ -286,7 +286,7 @@ section .carousel .carousel-caption {
 .guitarras-destacados h3 {
   margin: 5px;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .guitarras-destacados .contenedor-guitarras {
   display: flex;
@@ -328,7 +328,7 @@ section .carousel .carousel-caption {
   padding: 7px 12px;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
 }
 .guitarras-destacados .contenedor-guitarras div button:hover {
@@ -348,7 +348,7 @@ section .carousel .carousel-caption {
 
 .bajos-destacados h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: rgb(0, 0, 0);
   background-color: rgb(228, 181, 119);
   margin: 10px;
@@ -358,7 +358,7 @@ section .carousel .carousel-caption {
 .bajos-destacados h3 {
   margin: 5px;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .bajos-destacados .contenedor-bajos {
   display: flex;
@@ -400,7 +400,7 @@ section .carousel .carousel-caption {
   padding: 7px 12px;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto", sans-serif;
 }
 .bajos-destacados .contenedor-bajos div button:hover {
@@ -420,7 +420,7 @@ section .carousel .carousel-caption {
 
 .titulo-custom {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8125rem;
   color: white;
   background-color: red;
   margin: 10px;
@@ -454,7 +454,7 @@ section .carousel .carousel-caption {
 }
 .banner-section .banner-padre p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
@@ -472,7 +472,7 @@ section .carousel .carousel-caption {
 
 .how-section h2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: rgb(0, 0, 0);
   background-color: rgb(228, 181, 119);
   margin: 10px;
@@ -491,7 +491,7 @@ section .carousel .carousel-caption {
 }
 .how-section .how-container .how-steps p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
@@ -512,7 +512,7 @@ section .carousel .carousel-caption {
 
 .seccion-nosotros .titulo-historia {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8125rem;
   color: rgb(255, 255, 255);
   background-color: red;
   margin: 10px;
@@ -521,7 +521,7 @@ section .carousel .carousel-caption {
 }
 .seccion-nosotros .texto-historia {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgb(255, 255, 255);
   margin: 10px;
   padding: 10px;
@@ -531,7 +531,7 @@ section .carousel .carousel-caption {
 
 section .titulo-sobre-nosotros {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: rgb(0, 0, 0);
   background-color: rgb(228, 181, 119);
   margin: 10px;
@@ -557,7 +557,7 @@ section .grilla-ubi .item {
 }
 section .grilla-ubi .item h3 {
   margin: 0 0 8px; /* top right-left bottom */
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
 }
 section .grilla-ubi .item iframe {
@@ -573,7 +573,7 @@ section .grilla-ubi .item iframe {
 
 .titutlo-contacto {
   text-align: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: rgb(0, 0, 0);
   background-color: rgb(228, 181, 119);
   margin: 10px;
@@ -583,7 +583,7 @@ section .grilla-ubi .item iframe {
 
 .titulo-accesorios {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.8125rem;
   color: white;
   background-color: red;
   margin: 10px;
@@ -626,7 +626,7 @@ section .grilla-ubi .item iframe {
   background-color: rgba(0, 0, 0, 0.648) !important;
   padding: 7px 12px !important;
   margin: 0 !important;
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -644,7 +644,7 @@ section .grilla-ubi .item iframe {
   padding: 7px 12px !important;
   cursor: pointer !important;
   transition: 0.3s !important;
-  font-size: 14px !important;
+  font-size: 0.875rem !important;
   font-family: "Roboto", sans-serif !important;
 }
 .grid-accesorios .grid-item button:hover {
@@ -1057,32 +1057,32 @@ a {
 /**********************h1 fuente mobile*********************/
 @media (max-width: 600px) {
   .titulo-principal {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 600px) {
   .guitarras-destacados .titulo-gb {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 600px) {
   .titulo-custom {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 600px) {
   .titulo-custom {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 600px) {
   .titulo-accesorios {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 600px) {
   .seccion-nosotros .titulo-historia {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 /*********************** media query accesorios 480px ********************************/
