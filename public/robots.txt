@@ -9,4 +9,4 @@ Disallow: /privado/
 Allow: /
 
 # Indicar la ubicación del sitemap para facilitar la indexación
-Sitemap: https://ampmusic.netlify.app/sitemap.xml
+Sitemap: https://ampmusic.netlify.app/public/sitemap.xml
